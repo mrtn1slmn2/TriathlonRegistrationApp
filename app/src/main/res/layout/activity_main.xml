@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/imgView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/description"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/txtTitle"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtAthletes"
+        android:layout_width="266dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:hint="@string/txtAthletes"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Spinner
+        android:id="@+id/txtLocation"
+        android:layout_width="231dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:entries="@array/txtLocation"
+        android:prompt="@string/prompt"
+        android:spinnerMode="dialog"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAthletes" />
+
+    <Button
+        android:id="@+id/btnCost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:text="@string/btnCost"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgSwimmers" />
+
+    <EditText
+        android:id="@+id/txtResult"
+        android:layout_width="339dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCost" />
+
+    <ImageView
+        android:id="@+id/imgSwimmers"
+        android:layout_width="389dp"
+        android:layout_height="272dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:contentDescription="@string/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtLocation"
+        app:srcCompat="@drawable/tri" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
